@@ -1,11 +1,86 @@
-.jumbotron h1 {
+body {
+	margin: 0px;
 	font-family: 'Droid Sans', sans-serif;
+	color: #0f0f0f;
+
+}
+
+.nav {
+	padding: 10px;
+	height: 50px;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #c6c6c6;
+	position: float;
+	background-image: url(pictures/subtle_white_mini_waves.png);
+}
+
+.nav li {
+	display: inline;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.jumbotron {
+	background: url(pictures/cover.jpg);
+	background-size: contain;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+.jumbotron h1 {
+	margin: 0px;
+	padding-top: 60px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 10px;
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 72px;
 }
 
 .jumbotron p {
-	font-family: 'Droid Sans', sans-serif;
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 60px;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 24px;
+}
+
+.jumbotron .container {
+	background-color: #f8f8f8;
+	opacity: 0.7;
+}
+
+.my-work {
+	border-bottom: 1px solid #c6c6c6;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.my-work .container {
+	background-color: #f8f8f8;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.my-work h1 {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+.contact {
+	border-bottom: 1px solid #c6c6c6;
+	padding: 20px;
+}
+
+.contact .container {
+	text-align: center;
+}
+
+.contact .container img {
+	padding-left: 5px;
+	padding-right: 5px;
 }
