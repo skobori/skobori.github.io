@@ -10,8 +10,14 @@ body {
 	height: 50px;
 	background-color: #f3f3f3;
 	border-bottom: 1px solid #c6c6c6;
-	position: float;
-	background-image: url(pictures/subtle_white_mini_waves.png);
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+.nav .container {
+	text-align: right;
+	padding-right: 100px;
 }
 
 .nav li {
@@ -20,7 +26,21 @@ body {
 	padding-right: 30px;
 }
 
+.nav a {
+	text-decoration: none;
+	color: #0f0f0f;
+	opacity: 0.6;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.nav a:hover {
+	opacity: 1;
+}
+
 .jumbotron {
+	top: 50px;
+	position: relative;
 	background: url(pictures/cover.jpg);
 	background-size: contain;
 	padding-top: 80px;
@@ -54,16 +74,9 @@ body {
 
 .my-work {
 	border-bottom: 1px solid #c6c6c6;
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-.my-work .container {
-	background-color: #f8f8f8;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: 60px;
+	background-color: #f8f8f8;
 }
 
 .my-work h1 {
@@ -71,16 +84,42 @@ body {
 	font-size: 48px;
 }
 
+.my-work .title {
+	padding-left: 100px;
+}
+
+.my-work .network {
+	padding-left: 100px;
+}
+
+.my-work .fun-cover {
+	padding-left: 100px;
+}
+
+.my-work .fun-cover img {
+	max-width: 418px;
+}
+
 .contact {
 	border-bottom: 1px solid #c6c6c6;
 	padding: 20px;
 }
 
-.contact .container {
+.contact .contact-info {
+	font-size: 12px;
 	text-align: center;
 }
 
-.contact .container img {
+.contact .contact-icons {
+	text-align: center;
+}
+
+.contact .contact-icons img {
 	padding-left: 5px;
 	padding-right: 5px;
+	opacity: 0.6;
+}
+
+.contact .contact-icons img:hover {
+	opacity: 1;
 }

@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js'></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src='script.js'></script>
 </head>
 
 <body>
@@ -17,33 +18,44 @@
 		<div class='container'>
 			<ul>
 				<li>
-					<a href='#'>About</a>
+					<a href='#' id='button-about'>About</a>
 				</li>
 				<li>
-					<a href='#'>My Work</a>
+					<a href='#' id='button-my-work'>My Work</a>
 				</li>
 				<li>
-					<a href='#'>Contact</a>
+					<a href='#' id='button-contact'>Contact</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 
-	<div class='jumbotron'>
+	<div class='jumbotron' id='scroll-about'>
 		<div class='container'>
 			<h1>Hi, my name is Stevie Kobori.</h1>
 			<p>I'm a sophomore studying Electrical Engineering and Computer Science at UC Berkeley. Avid reader. TSM follower. Board game enthusiast. </p>
 		</div>
 	</div>
 
-	<div class='my-work'>
-		<div class='container'>
+	<div class='my-work' id='scroll-my-work'>
+		<div class='title'>
 			<h1>Projects</h1>
 		</div>
+<!-- 		<div class='network'>
+			<h2>Network</h2>
+			<img src='pictures/network.png'>
+		</div>
+		<div class='fun-cover'>
+			<img src='pictures/funcover.png'>
+		</div> -->
 	</div>
 
-	<div class='contact'>
-		<div class='container'>
+	<div class='contact' id='scroll-contact'>
+		<div class='contact-info'>
+			email: skobori@gmail.com 
+			phone: (408) 368-5605
+		</div>
+		<div class='contact-icons'>
 			<a href='https://www.facebook.com/stevie.kobori95'><img src='pictures/facebook.png'></a>
 			<a href='https://www.linkedin.com/in/stevenkobori'><img src='pictures/linkedin.png'></a>
 			<a href='https://www.github.com/skobori'><img src='pictures/github.png'></a>
