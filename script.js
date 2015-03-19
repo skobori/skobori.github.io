@@ -1,22 +1,22 @@
-document.onreadystatechange = function () {
-	console.log('hellow world');
-    var state = document.readyState;
-    if (state == 'complete') {
-        // Place all your clicking logic here.
-        document.getElementById("button-about").onclick = function () { window.scroll(0, findPos(document.getElementById("scroll-about")))};
-        document.getElementById("button-my-work").onclick = function () { window.scroll(0, findPos(document.getElementById("scroll-my-work")))};
-        document.getElementById("button-contact").onclick = function () { window.scroll(0, findPos(document.getElementById("scroll-contact")))};
-    }
-};
+$(document).ready(function () {
 
-// This will help you with finding how much to scroll the window.
-// elem is DOM element
-function findPos(elem) {
-    var top = 0;
-    if (elem.offsetParent) {
-        do {
-            top += elem.offsetTop;
-        } while (elem = elem.offsetParent);
-        return [top];
+	$("#button-about").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scroll-about").offset().top - 50
+    }, 500);
+		});
+
+	$("#button-my-work").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scroll-my-work").offset().top - 20
+    }, 500);
+		});
+
+	$("#button-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#scroll-contact").offset().top - 25
+    }, 500);
+		});
+
     }
-}
+);
